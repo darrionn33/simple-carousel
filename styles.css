@@ -13,3 +13,50 @@ html {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+button {
+  width: 40px;
+  height: 500px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid;
+  overflow: hidden;
+}
+.cards {
+  display: flex;
+  width: 2500px;
+  transition: transform 0.3s;
+}
+.card {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+.card:nth-child(1) {
+  background-color: red;
+}
+.card:nth-child(2) {
+  background-color: orange;
+}
+.card:nth-child(3) {
+  background-color: yellow;
+  color: black;
+}
+.card:nth-child(4) {
+  background-color: green;
+}
+.card:nth-child(5) {
+  background-color: blue;
+}
