@@ -21,25 +21,25 @@ body {
 }
 button {
   width: 40px;
-  height: 500px;
+  height: min(70dvw, 500px);
   background-color: gray;
   color: white;
   cursor: pointer;
 }
 .container {
-  width: 500px;
-  height: 500px;
+  width: min(70dvw, 500px);
+  height: min(70dvw, 500px);
   border: 1px solid;
   overflow: hidden;
 }
 .cards {
   display: flex;
-  width: 2500px;
+  width: min(350dvw, 2500px);
   transition: transform 0.3s;
 }
 .card {
-  width: 500px;
-  height: 500px;
+  width: min(70dvw, 500px);
+  height: min(70dvw, 500px);
   display: grid;
   place-items: center;
   color: white;
