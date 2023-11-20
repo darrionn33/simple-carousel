@@ -18,8 +18,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 100dvh;
+  flex-direction: column;
+  gap: 10px;
 }
-button {
+body > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > div > button {
   width: 40px;
   height: min(70dvw, 500px);
   background-color: gray;
@@ -59,4 +66,16 @@ button {
 }
 .card:nth-child(5) {
   background-color: blue;
+}
+.indicator-div {
+  display: flex;
+  gap: 5px;
+}
+button.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  outline: 1px solid black;
+  transition: transform 0.3s;
 }
